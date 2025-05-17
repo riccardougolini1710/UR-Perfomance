@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta name="description" content="Riccardo Ugolini – Performance Coach specializzato in team ad alte prestazioni, coaching strategico e consulenza HR per imprenditori e manager. Scopri il metodo URP.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Riccardo Ugolini">
+  <meta property="og:title" content="UR-performance – Riccardo Ugolini">
+  <meta property="og:description" content="Trasforma il potenziale del tuo team in risultati concreti con il metodo URP: Unlock. Refine. Perform.">
+  <meta property="og:image" content="https://i.imgur.com/UN6nDO8.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ur-performance.it">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UR-performance – Riccardo Ugolini">
+  <meta name="twitter:description" content="Performance coaching per team ad alte prestazioni. Scopri il Metodo URP.">
+  <meta name="twitter:image" content="https://i.imgur.com/UN6nDO8.jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UR-performance – Riccardo Ugolini</title>
+  <style>
+    :root {
+      --primary-color: #0a0a23;
+      --secondary-color: #eaf4ff;
+      --accent-color: #0066ff;
+      --bg-light: #ffffff;
+      --text-dark: #111;
+    }
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      background: #fff;
+      scroll-behavior: smooth;
+      font-weight: 400;
+      letter-spacing: -0.2px;
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 100px 20px 80px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    header h1 {
+      font-size: 5em;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #ccc;
+      margin: 20px auto 30px;
+      max-width: 700px;
+    }
+    .hero-buttons a, .hero-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+    .hero-buttons a:hover, .hero-button:hover {
+      background: #0052cc;
+      transform: scale(1.02);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--primary-color);
+      text-align: center;
+      padding: 14px 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+    section:nth-of-type(even) {
+      background: #ffffff;
+    }
+    h2 {
+      color: var(--primary-color);
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+    footer {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .testimonial-card {
+      transition: all 0.3s ease;
+    }
+    
+    .cta-fixed-desktop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent-color);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1em;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 9999;
+      animation: fadeIn 1s ease-in;
+    }
+    .cta-fixed-desktop:hover {
+      background: #0052cc;
+    }
+    @media (max-width: 768px) {
+      .cta-fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--accent-color);
+        color: white;
+        text-align: center;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-decoration: none;
+        z-index: 9999;
+      }
+      header h1 {
+        font-size: 2.4em;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 0.95em;
+      }
+    }
+    @media (max-width: 768px) {
+    header img {
+      object-fit: cover;
+      height: 280px;
+      width: 100%;
+      object-position: center top;
+    }
+    .testimonial-card {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    .testimonial-card img {
+      margin-bottom: 12px;
+    }
+    .hero-buttons a, .hero-button {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Il contenuto dinamico e le sezioni del sito saranno qui -->
+  <header>
+    <h1>UR-Performance</h1>
+    <p><strong>Non servono supereroi. Servono persone che sanno esprimere il massimo.</strong><br>Il mio lavoro è trasformare potenziale in risultati tangibili, ogni giorno.<br>Con UR-Performance, aiuto imprenditori, manager e responsabili a costruire team motivati, competenti e capaci di brillare anche nelle sfide più complesse.</p>
+    <div class="hero-buttons" style="display: flex; justify-content: center;">
+  <a href="#metodo">Scopri il Metodo URP</a>
+</div>
+    <img src="https://i.imgur.com/UN6nDO8.jpeg" alt="Young team collaboration" style="max-width: 100%; width: 100%; height: auto; object-fit: contain; margin: 30px auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: block;">
+  </header>
+
+  <nav>
+  <a href="#chi-sono">Chi Sono</a>
+  <a href="#servizi">Cosa Faccio</a>
+  <a href="#metodo">Metodo</a>
+  <a href="#esperienza">Esperienza</a>
+  <a href="#testimonianze">Testimonianze</a>
+  <a href="#enti">Enti</a>
+  <a href="#contatti">Contatti</a>
+</nav>
+
+  <section id="chi-sono" class="fade-in">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Un coach, un metodo, un impatto reale.</h2>
+  <p>Non ti porto motivazione usa e getta. Ti porto metodo, visione e strumenti concreti.
+  Da oltre 10 anni lavoro fianco a fianco con chi vuole risultati veri: imprenditori, team leader, responsabili di rete.
+  Il mio obiettivo è aiutarti a creare una squadra che funziona anche quando tu non ci sei, e che cresce perché sa come farlo.</p>
+  <img src="https://i.imgur.com/Z4Fqi12.jpeg" alt="Riccardo Ugolini" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 20px;">
+</section>
+
+<section id="servizi" class="section-highlighted fade-in" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8f9c74bb3b?fit=crop&w=1600&q=60'); background-size: cover; background-repeat: no-repeat; background-position: center; background-blend-mode: lighten; background-color: rgba(255,255,255,0.9);">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Come posso aiutarti</h2>
+  <ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Formazione per team:</strong> non solo teoria ma pratica immediata. Aiuto ogni nuovo ingresso a diventare operativo, sicuro e motivato nel minor tempo possibile.</li>
+  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Coaching strategico:</strong> affianco leader e responsabili per rafforzare la gestione del team, la lettura dei dati e la capacità di guidare con coerenza.</li>
+  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Consulenza su misura:</strong> ogni realtà è diversa. Analizzo i tuoi processi, riscrivo ciò che non funziona e costruisco insieme a te sistemi replicabili e scalabili.</li>
+  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Metodo HR automatico:</strong> implemento flussi digitali e automatizzati per l'onboarding, la selezione e la crescita dei talenti, così che ogni persona giusta entri e cresca nel modo giusto.</li>
+</ul>
+</section>
+
+<section id="metodo" class="fade-in">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Metodo URP – Unlock. Refine. Perform.</h2>
+  <p>Il Metodo URP nasce da un'idea semplice: il potenziale c’è, ma spesso non si vede. Ecco perché lavoro con te in tre fasi che fanno la differenza.</p>
+  <ul style="list-style: none; padding: 0;">
+    <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Unlock (Analisi):</strong> entriamo nel cuore del team. Capisco cosa frena le persone, dove si disperdono energia e opportunità, e traccio una mappa per sbloccare tutto questo.</li>
+    <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Refine (Formazione):</strong> non si tratta solo di sapere cosa fare, ma di farlo bene. Qui lavoriamo su metodo, motivazione e strumenti per rendere il tuo team più forte ogni giorno.</li>
+    <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Perform (Consolidamento):</strong> ora trasformiamo le persone in leader, i processi in abitudini e le idee in risultati. Perché il vero successo è quello che continua anche quando io non ci sono più.</li>
+  </ul>
+  <p style="text-align: center;">URP non è teoria: è trasformazione. È il ponte tra ciò che sei e ciò che puoi diventare come squadra.</p>
+</section>
+  </section>
+
+<section id="esperienza" class="fade-in">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Esperienza.</h2>
+  <p>Ogni settore ha le sue sfide, ma tutti hanno una cosa in comune: le persone. In questi anni ho affiancato professionisti, reti vendita e organizzazioni che cercavano una vera trasformazione interna. Dal mondo non profit, agli agenti immobiliari, fino agli imprenditori digitali dell'infobusiness, ho visto team crescere, evolvere, diventare strutture ad alte prestazioni.</p>
+  <p>Ho frequentato lo Startup Builder di Startup Geeks, un percorso che mi ha fornito strumenti avanzati per validare, strutturare e far crescere nuovi progetti imprenditoriali. Un'esperienza che ho integrato con il mio lavoro sul campo, unendo teoria e pratica in ogni intervento.</p>
+  <p>Collaboro con realtà che lavorano con alcune delle ONG e fondazioni più riconosciute.</p>
+</section>
+
+<section id="testimonianze">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Le parole di chi ha vissuto il cambiamento</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marco Bianchi" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Riccardo non ci ha solo formato: ci ha aiutato a riscrivere la nostra identità di squadra.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Marco Bianchi<br><span style="font-weight: normal; color: #666;">Team Leader ONG</span></p>
+      </div>
+    </div>
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Laura Conti" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Non è la solita formazione. Con Riccardo ogni sessione diventa un cambio di marcia.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Laura Conti<br><span style="font-weight: normal; color: #666;">Resp. Commerciale</span></p>
+      </div>
+    </div>
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Andrea Bellini" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Non è solo un consulente, è un partner. Mi ha aiutato a riorganizzare il team HR.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Andrea Bellini<br><span style="font-weight: normal; color: #666;">Imprenditore</span></p>
+      </div>
+    </div>
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Davide Serra" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Avevamo bisogno di crescere davvero. Riccardo ci ha portato visione e metodo.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Davide Serra<br><span style="font-weight: normal; color: #666;">HR Manager</span></p>
+      </div>
+    </div>
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Gianni Romano" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Ora sono i nostri team leader a formare i nuovi. Il lavoro ha messo radici.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Gianni Romano<br><span style="font-weight: normal; color: #666;">Direttore Commerciale</span></p>
+      </div>
+    </div>
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Luca Greco" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Con il suo metodo ho cambiato modo di lavorare. Ora vendo con più strategia.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Luca Greco<br><span style="font-weight: normal; color: #666;">Agente Immobiliare</span></p>
+      </div>
+    </div>
+    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sara Fontana" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <p>“Ha trasformato la nostra cultura aziendale. Non torneremmo più indietro.”</p>
+        <p style="font-weight: bold; margin-top: 10px;">Sara Fontana<br><span style="font-weight: normal; color: #666;">Team Coach</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="enti" class="fade-in">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Campagne di adesione che ho guidato</h2>
+  <p>Attivare un’adesione non è solo convincere qualcuno a dire sì: è creare un momento di consapevolezza, ispirazione e fiducia. In ogni campagna a cui ho partecipato, ho lavorato perché le persone si sentissero parte di qualcosa di più grande. Ho guidato team con passione, metodo e presenza costante sul campo, trasformando ogni stand, piazza o evento in un luogo dove le cause prendevano voce e i risultati parlavano da soli.</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin-top: 30px;">
+<img src="https://i.imgur.com/2ZuGit1.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/6lXy6yA.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/gDrmX8C.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/S8QtDLo.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/Rgr9mDa.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/zPbzUXI.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/AyIeSA5.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/Rq1WmqV.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/kYFYKzO.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/9B3pmMd.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/x2hRnTe.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/FHRvSp1.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/M0XwkSi.png" alt="Logo" style="max-height: 40px;">
+<img src="https://i.imgur.com/UYFlsCU.png" alt="Logo" style="max-height: 40px;">
+</div>
+    <p style="margin-top: 30px; font-style: italic; font-size: 1.1em; text-align: center; color: #333;">L’esperienza non è solo una lista di nomi: è la capacità di adattarsi, trasformare e costruire risultati veri con persone reali. È questa l’energia che porto ogni volta che entro in contatto con un nuovo team.</p>
+  </div>
+</section>
+
+<section id="contatti" class="fade-in">
+  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: table; margin: 0 auto;">Parliamone.</h2>
+  <p style="text-align: center;">Hai un team da far crescere?<br>Vuoi ottimizzare onboarding, leadership o strategie di vendita?<br>Scrivimi e troviamo insieme la soluzione giusta per te.</p>
+  <div style="display: flex; justify-content: center; margin: 40px 0 70px;">
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="hero-button">Compila il modulo per prenotare</a>
+  </div>
+  <p style="text-align: center; font-style: italic; color: #333; margin-top: 20px; font-size: 1.1em;">Nella vita puoi ottenere tutto quello che vuoi se aiuti le altre persone ad ottenere quello che loro vogliono.</p>
+</section>
+
+  <footer>
+    <p>UR-performance® – Riccardo Ugolini<br />P.IVA 02537860997 / Note legali | Privacy Policy | Cookie</p>
+  </footer>
+
+  
+  
+</body>
+</html>
