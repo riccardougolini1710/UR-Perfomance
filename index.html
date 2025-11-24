@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta name="description" content="Riccardo Ugolini – Performance Coach specializzato in team ad alte prestazioni, coaching strategico e consulenza HR per imprenditori e manager. Scopri il metodo URP.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO base -->
+  <title>UR-Performance – Team F2F per ONG | Riccardo Ugolini</title>
+  <meta name="description" content="Aiuto ONG e organizzazioni non profit a costruire e far crescere team F2F interni ad alte prestazioni. UR-Performance™, RAAS™ e UR-RealTalk™: il sistema integrato per team solidi e costanti.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Riccardo Ugolini">
   <link rel="canonical" href="https://www.riccardougolini.com/" />
-  <meta property="og:title" content="UR-performance – Riccardo Ugolini">
-  <meta property="og:description" content="Trasforma il potenziale del tuo team in risultati concreti con il metodo URP: Unlock. Refine. Perform.">
-  <meta property="og:image" content="https://i.imgur.com/UN6nDO8.jpeg">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="UR-Performance – Team F2F per ONG">
+  <meta property="og:description" content="Da Bari a Parma: team F2F interni che crescono, vendono e restano. Scopri il sistema UR-Performance™, RAAS™ e UR-RealTalk™.">
+  <meta property="og:image" content="https://i.imgur.com/ueYkjqq.jpeg">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ur-performance.it">
+  <meta property="og:url" content="https://www.riccardougolini.com/">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="UR-performance – Riccardo Ugolini">
-  <meta name="twitter:description" content="Performance coaching per team ad alte prestazioni. Scopri il Metodo URP.">
-  <meta name="twitter:image" content="https://i.imgur.com/UN6nDO8.jpeg">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UR-performance – Riccardo Ugolini</title>
+  <meta name="twitter:title" content="UR-Performance – Team F2F per ONG">
+  <meta name="twitter:description" content="Performance Advisor F2F, RAAS™ e UR-RealTalk™ per team interni che performano.">
+  <meta name="twitter:image" content="https://i.imgur.com/ueYkjqq.jpeg">
+
   <style>
     :root {
       --primary-color: #0a0a23;
@@ -47,16 +53,24 @@
       min-height: 100vh;
     }
     header h1 {
-      font-size: 5em;
+      font-size: 3.4rem;
       letter-spacing: 1.5px;
-      text-transform: uppercase;
       font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    header h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #d0d8ff;
+      margin: 0 0 18px;
     }
     header p {
-      font-size: 1.3em;
+      font-size: 1.1em;
       color: #ccc;
-      margin: 20px auto 30px;
-      max-width: 700px;
+      margin: 18px auto 26px;
+      max-width: 750px;
+      line-height: 1.7;
     }
     .hero-buttons a, .hero-button {
       display: inline-block;
@@ -82,15 +96,15 @@
       top: 0;
       background: var(--primary-color);
       text-align: center;
-      padding: 14px 0;
+      padding: 12px 0;
       z-index: 1000;
     }
     nav a {
       color: white;
-      margin: 0 18px;
+      margin: 0 14px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1em;
+      font-size: 0.95em;
       transition: color 0.3s ease;
     }
     nav a:hover {
@@ -100,9 +114,7 @@
       max-width: 1000px;
       margin: auto;
       padding: 80px 20px;
-    }
-    section:nth-of-type(even) {
-      background: #ffffff;
+      background: #fff;
     }
     h2 {
       color: var(--primary-color);
@@ -135,8 +147,95 @@
     }
     .testimonial-card {
       transition: all 0.3s ease;
+      flex: 1 1 280px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 18px 16px;
+      border: none;
     }
-    
+    .testimonial-author {
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    .testimonial-role {
+      font-weight: normal;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    .logos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .logo-item {
+      flex: 0 1 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-item img {
+      max-height: 42px;
+      width: auto;
+      max-width: 120px;
+      object-fit: contain;
+      filter: grayscale(20%);
+      opacity: 0.9;
+      transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    }
+    .logo-item img:hover {
+      transform: scale(1.05);
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+
+    .products-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .product-card {
+      flex: 1 1 320px;
+      border-radius: 12px;
+      border: 1px solid #e5e5e5;
+      padding: 20px;
+      background: #fafafa;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .product-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.25em;
+      color: var(--primary-color);
+    }
+    .product-tag {
+      display: inline-block;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: #eaf4ff;
+      color: #0052cc;
+      padding: 4px 8px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .product-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 0.95em;
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    .product-link:hover {
+      text-decoration: underline;
+    }
+
     .cta-fixed-desktop {
       position: fixed;
       bottom: 20px;
@@ -155,8 +254,35 @@
     .cta-fixed-desktop:hover {
       background: #0052cc;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     @media (max-width: 768px) {
-      .cta-fixed {
+      header h1 {
+        font-size: 2.4em;
+      }
+      header h2 {
+        font-size: 1.05rem;
+      }
+      header img {
+        object-fit: cover;
+        height: 260px;
+        width: 100%;
+        object-position: center top;
+      }
+      nav a {
+        margin: 0 6px;
+        font-size: 0.8em;
+      }
+      .hero-buttons a, .hero-button {
+        width: 90%;
+      }
+      .cta-fixed-desktop {
+        display: none;
+      }
+      .cta-fixed-mobile {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -164,198 +290,304 @@
         background: var(--accent-color);
         color: white;
         text-align: center;
-        padding: 16px;
+        padding: 14px;
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1.05em;
         text-decoration: none;
         z-index: 9999;
       }
-      header h1 {
-        font-size: 2.4em;
-      }
-      nav a {
-        margin: 0 10px;
-        font-size: 0.95em;
-      }
     }
-    @media (max-width: 768px) {
-    header img {
-      object-fit: cover;
-      height: 280px;
-      width: 100%;
-      object-position: center top;
+
+    input[type=checkbox]:checked {
+      accent-color: var(--accent-color);
     }
-    .testimonial-card {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-    }
-    .testimonial-card img {
-      margin-bottom: 12px;
-    }
-    .hero-buttons a, .hero-button {
-      width: 90%;
-    }
-  }
-  input[type=checkbox]:checked {
-    accent-color: var(--accent-color);
-  }
-</style>
+  </style>
 </head>
 <body>
-  <!-- Il contenuto dinamico e le sezioni del sito saranno qui -->
   <header>
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-  <img src="https://i.imgur.com/ttvPgva.png" alt="UR-Performance Logo" style="max-width: 720px; width: 100%; margin: 0 auto; display: block; background: none;">
-  
-</div>
-</div>
-    <p><strong>Non servono supereroi. Servono persone che sanno esprimere il massimo.</strong><br>Il mio lavoro è trasformare potenziale in risultati tangibili, ogni giorno.<br>Con UR-Performance, aiuto imprenditori, manager e responsabili a costruire team motivati, competenti e capaci di brillare anche nelle sfide più complesse.</p>
-    <div class="hero-buttons" style="display: flex; justify-content: center;">
-  <a href="#metodo">Scopri il Metodo URP</a>
-</div>
-    <img src="https://i.imgur.com/UN6nDO8.jpeg" alt="Young team collaboration" style="max-width: 100%; width: 100%; height: auto; object-fit: contain; margin: 30px auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: block;">
+      <img src="https://i.imgur.com/ttvPgva.png" alt="UR-Performance Logo" style="max-width: 520px; width: 100%; margin: 0 auto; display: block; background: none;">
+    </div>
+
+    <h1>Team F2F interni che performano davvero.</h1>
+    <h2>UR-Performance™, RAAS™ e UR-RealTalk™: il sistema integrato per costruire team F2F solidi, competenti e costanti.</h2>
+
+    <p>
+      Non ti porto motivazione usa e getta. Ti porto donazioni ricorrenti.<br>
+      Sono Riccardo Ugolini e aiuto ONG e organizzazioni non profit a costruire e far crescere team
+      face-to-face interni che portano adesioni, tengono la resa e restano nel tempo.
+    </p>
+
+    <div class="hero-buttons" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+      <a href="#metodo">Scopri il Metodo URP</a>
+      <a href="#contatti">Parliamo del tuo team F2F</a>
+    </div>
+
+    <img src="https://i.imgur.com/ueYkjqq.jpeg" 
+     alt="Success Quote"
+     style="
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 30px auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        display: block;
+     ">
   </header>
 
   <nav>
-  <a href="#chi-sono">Chi Sono</a>
-  <a href="#servizi">Cosa Faccio</a>
-  <a href="#metodo">Metodo</a>
-  <a href="#esperienza">Esperienza</a>
-  <a href="#testimonianze">Testimonianze</a>
-  <a href="#enti">Enti</a>
-  <a href="#contatti">Contatti</a>
-</nav>
+    <a href="#chi-sono">Chi sono</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#prodotti">Prodotti</a>
+    <a href="#metodo">Metodo</a>
+    <a href="#esperienza">Esperienza</a>
+    <a href="#speaker">Speaker & Performance Advisor</a>
+    <a href="#testimonianze">Testimonianze</a>
+    <a href="#enti">Enti</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
 
+  <!-- CHI SONO -->
   <section id="chi-sono" class="fade-in">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Un coach, un metodo, un impatto reale.</h2>
-  <p>Non ti porto motivazione usa e getta. Ti porto metodo, visione e strumenti concreti.
-  Da oltre 10 anni lavoro fianco a fianco con chi vuole risultati veri: imprenditori, team leader, responsabili di rete.
-  Il mio obiettivo è aiutarti a creare una squadra che funziona anche quando tu non ci sei, e che cresce perché sa come farlo.</p>
-  <img src="https://i.imgur.com/Z4Fqi12.jpeg" alt="Riccardo Ugolini" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 20px;">
-</section>
-
-<section id="servizi" class="section-highlighted fade-in" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8f9c74bb3b?fit=crop&w=1600&q=60'); background-size: cover; background-repeat: no-repeat; background-position: center; background-blend-mode: lighten; background-color: rgba(255,255,255,0.9);">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Come posso aiutarti</h2>
-  <ul style="list-style: none; padding: 0;">
-  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Formazione per team:</strong> non solo teoria ma pratica immediata. Aiuto ogni nuovo ingresso a diventare operativo, sicuro e motivato nel minor tempo possibile.</li>
-  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Coaching strategico:</strong> affianco leader e responsabili per rafforzare la gestione del team, la lettura dei dati e la capacità di guidare con coerenza.</li>
-  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Consulenza su misura:</strong> ogni realtà è diversa. Analizzo i tuoi processi, riscrivo ciò che non funziona e costruisco insieme a te sistemi replicabili e scalabili.</li>
-  <li style="margin-bottom: 20px; padding: 16px;  background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Metodo HR automatico:</strong> implemento flussi digitali e automatizzati per l'onboarding, la selezione e la crescita dei talenti, così che ogni persona giusta entri e cresca nel modo giusto.</li>
-</ul>
-</section>
-
-<section id="metodo" class="fade-in">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Metodo URP – Unlock. Refine. Perform.</h2>
-  <p>Il Metodo URP nasce da un'idea semplice: il potenziale c’è, ma spesso non si vede. Ecco perché lavoro con te in tre fasi che fanno la differenza.</p>
-  <ul style="list-style: none; padding: 0;">
-    <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Unlock (Analisi):</strong> entriamo nel cuore del team. Capisco cosa frena le persone, dove si disperdono energia e opportunità, e traccio una mappa per sbloccare tutto questo.</li>
-    <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Refine (Formazione):</strong> non si tratta solo di sapere cosa fare, ma di farlo bene. Qui lavoriamo su metodo, motivazione e strumenti per rendere il tuo team più forte ogni giorno.</li>
-    <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;"><strong><span style="color: #0066ff;">✔</span> Perform (Consolidamento):</strong> ora trasformiamo le persone in leader, i processi in abitudini e le idee in risultati. Perché il vero successo è quello che continua anche quando io non ci sono più.</li>
-  </ul>
-  <p style="text-align: center;">URP non è teoria: è trasformazione. È il ponte tra ciò che sei e ciò che puoi diventare come squadra.</p>
-</section>
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      Un metodo, una guida, un canale che torna a funzionare.
+    </h2>
+    <p>
+      Vengo dal campo, non dall’aula. Ho passato anni tra stand, piazze e centri commerciali,
+      guidando team F2F che ogni giorno dovevano portare a casa adesioni, non applausi.
+    </p>
+    <p>
+      Ho costruito e guidato reti che hanno generato migliaia di donatori regolari e oltre 300.000€ annui di valore
+      per singolo ufficio. Oggi metto questa esperienza al servizio di ONG e organizzazioni non profit che vogliono:
+    </p>
+    <ul>
+      <li>rilanciare team F2F interni che si sono spenti o non sono mai decollati;</li>
+      <li>aprire nuove città con un modello sostenibile e replicabile;</li>
+      <li>ridurre turnover e caos in selezione con un sistema HR proprietario.</li>
+    </ul>
+    <p>
+      Il mio lavoro è semplice da descrivere e difficile da copiare:
+      entrare nei team, capire cosa non funziona e sistemarlo con il Metodo UR-Performance™.
+    </p>
+    
   </section>
 
-<section id="esperienza" class="fade-in">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Esperienza.</h2>
-  <p>Ogni settore ha le sue sfide, ma tutti hanno una cosa in comune: le persone. In questi anni ho affiancato professionisti, reti vendita e organizzazioni che cercavano una vera trasformazione interna. Dal mondo non profit, agli agenti immobiliari, fino agli imprenditori digitali dell'infobusiness, ho visto team crescere, evolvere, diventare strutture ad alte prestazioni.</p>
-  <p>Ho frequentato lo Startup Builder di Startup Geeks, un percorso che mi ha fornito strumenti avanzati per validare, strutturare e far crescere nuovi progetti imprenditoriali. Un'esperienza che ho integrato con il mio lavoro sul campo, unendo teoria e pratica in ogni intervento.</p>
-  <p>Collaboro con realtà che lavorano con alcune delle ONG e fondazioni più riconosciute.</p>
-</section>
+  <!-- SERVIZI -->
+  <section id="servizi" class="fade-in" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8f9c74bb3b?fit=crop&w=1600&q=60'); background-size: cover; background-repeat: no-repeat; background-position: center; background-blend-mode: lighten; background-color: rgba(255,255,255,0.9);">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      Come posso aiutare la tua ONG
+    </h2>
+    <ul style="list-style: none; padding: 0;">
+      <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;">
+        <strong><span style="color: #0066ff;">✔</span> Performance coaching per team F2F interni:</strong>
+        lavoro su tecnica, mindset e routine operative dei tuoi dialogatori e team leader, con focus su adesioni, resa e retention.
+      </li>
+      <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;">
+        <strong><span style="color: #0066ff;">✔</span> Formazione intensiva e on-the-job:</strong>
+        non solo aula, ma affiancamento reale sul campo su script, gestione del no, ask finale, ritmo giornaliero e ruolo dei team leader.
+      </li>
+      <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;">
+        <strong><span style="color: #0066ff;">✔</span> Direzione strategica del canale F2F:</strong>
+        lettura dei dati, organizzazione interna, ruoli, budget, partnership e roadmap operativa 6–12 mesi.
+      </li>
+    </ul>
+  </section>
+  <!-- ECOSISTEMA UR-PERFORMANCE -->
+  <section id="ecosistema" class="fade-in" style="padding-top: 40px;">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      L'Ecosistema UR-Performance™
+    </h2>
 
-<section id="testimonianze">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Le parole di chi ha vissuto il cambiamento</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marco Bianchi" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Riccardo non ci ha solo formato: ci ha aiutato a riscrivere la nostra identità di squadra.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Marco Bianchi<br><span style="font-weight: normal; color: #666;">Team Leader ONG</span></p>
-      </div>
-    </div>
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Laura Conti" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Non è la solita formazione. Con Riccardo ogni sessione diventa un cambio di marcia.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Laura Conti<br><span style="font-weight: normal; color: #666;">Resp. Commerciale</span></p>
-      </div>
-    </div>
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Andrea Bellini" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Non è solo un consulente, è un partner. Mi ha aiutato a riorganizzare il team HR.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Andrea Bellini<br><span style="font-weight: normal; color: #666;">Imprenditore</span></p>
-      </div>
-    </div>
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Davide Serra" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Avevamo bisogno di crescere davvero. Riccardo ci ha portato visione e metodo.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Davide Serra<br><span style="font-weight: normal; color: #666;">HR Manager</span></p>
-      </div>
-    </div>
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Gianni Romano" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Ora sono i nostri team leader a formare i nuovi. Il lavoro ha messo radici.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Gianni Romano<br><span style="font-weight: normal; color: #666;">Direttore Commerciale</span></p>
-      </div>
-    </div>
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Luca Greco" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Con il suo metodo ho cambiato modo di lavorare. Ora vendo con più strategia.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Luca Greco<br><span style="font-weight: normal; color: #666;">Agente Immobiliare</span></p>
-      </div>
-    </div>
-    <div class="testimonial-card" style="flex: 1 1 300px; background-color: #f9f9f9; border-radius: 8px; padding: 16px; display: flex; gap: 16px; border: none;">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sara Fontana" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-      <div>
-        <p>“Ha trasformato la nostra cultura aziendale. Non torneremmo più indietro.”</p>
-        <p style="font-weight: bold; margin-top: 10px;">Sara Fontana<br><span style="font-weight: normal; color: #666;">Team Coach</span></p>
-      </div>
-    </div>
-  </div>
-</section>
+    <p style="max-width: 750px; line-height: 1.7; margin-bottom: 30px;">
+      Il ciclo operativo che guida ogni progetto F2F interno:
+      <strong>RAAS™ → Metodo URP™ → UR-RealTalk™ → Adesioni</strong>.<br>
+      Un sistema continuo pensato per costruire team che performano, restano e crescono nel tempo.
+    </p>
 
-<section id="enti" class="fade-in">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Campagne di adesione che ho guidato</h2>
-  <p>Attivare un’adesione non è solo convincere qualcuno a dire sì: è creare un momento di consapevolezza, ispirazione e fiducia. In ogni campagna a cui ho partecipato, ho lavorato perché le persone si sentissero parte di qualcosa di più grande. Ho guidato team con passione, metodo e presenza costante sul campo, trasformando ogni stand, piazza o evento in un luogo dove le cause prendevano voce e i risultati parlavano da soli.</p>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin-top: 30px;">
-<img src="https://i.imgur.com/2ZuGit1.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/6lXy6yA.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/gDrmX8C.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/S8QtDLo.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/Rgr9mDa.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/zPbzUXI.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/AyIeSA5.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/Rq1WmqV.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/kYFYKzO.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/9B3pmMd.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/x2hRnTe.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/FHRvSp1.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/M0XwkSi.png" alt="Logo" style="max-height: 40px;">
-<img src="https://i.imgur.com/UYFlsCU.png" alt="Logo" style="max-height: 40px;">
-</div>
-    <p style="margin-top: 30px; font-style: italic; font-size: 1.1em; text-align: center; color: #333;">L’esperienza non è solo una lista di nomi: è la capacità di adattarsi, trasformare e costruire risultati veri con persone reali. È questa l’energia che porto ogni volta che entro in contatto con un nuovo team.</p>
-  </div>
-</section>
+    <img
+      src="A_2D_digital_graphic_diagram_displays_the_UR-Perfo.png"
+      alt="Ecosistema UR-Performance"
+      style="
+        max-width: 100%;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        margin-top: 10px;
+      "
+    >
+  </section>
 
-<section id="contatti" class="fade-in">
-  <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: table; margin: 0 auto;">Parliamone.</h2>
-  <p style="text-align: center;">Hai un team da far crescere?<br>Vuoi ottimizzare onboarding, leadership o strategie di vendita?<br>Scrivimi e troviamo insieme la soluzione giusta per te.</p>
-  <div style="display: flex; justify-content: center; margin: 40px 0 70px;">
-    <a href="https://forms.gle/HeaZPu24FpAYjZDh9" target="_blank" class="hero-button">Compila il modulo per prenotare</a>
-  </div>
-  <p style="text-align: center; font-style: italic; color: #333; margin-top: 20px; font-size: 1.1em;">Nella vita puoi ottenere tutto quello che vuoi se aiuti le altre persone ad ottenere quello che loro vogliono.</p>
-</section>
 
-  <footer>
-    <p>UR-performance® – Riccardo Ugolini<br />P.IVA 02537860997 / Note legali | Privacy Policy | Cookie</p>
-  </footer>
+  <!-- PRODOTTI -->
+  <section id="prodotti" class="fade-in">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      Prodotti UR-Performance™
+    </h2>
+    <p>
+      Ho sviluppato strumenti proprietari che elevano ogni fase del tuo team F2F:
+      dalla selezione alla formazione, fino alla performance sul campo.
+    </p>
 
-  
-  
-</body>
-</html>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-tag">Sistema HR</div>
+        <h3>RAAS™ – Recruiting-as-a-Service</h3>
+        <p>
+          Il motore che alimenta in modo continuo il tuo team F2F interno con candidati in linea con il lavoro, riducendo
+          turnover e colloqui sprecati.
+        </p>
+        <ul>
+          <li>Strategia annunci e posizionamento del ruolo</li>
+          <li>Funnel digitale di candidatura e filtri automatici</li>
+          <li>Pre-onboarding chiaro, senza sorprese per i candidati</li>
+          <li>Monitoraggio costante di CV, show-up, inserimenti e retention</li>
+        </ul>
+        <a href="#raas" class="product-link">Scopri RAAS™ nel dettaglio →</a>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag">Simulatore cognitivo</div>
+        <h3>UR-RealTalk™ – Simulatore cognitivo F2F</h3>
+        <p>
+          Un simulatore cognitivo avanzato che replica in tempo reale ogni dinamica, obiezione e stato emotivo che un dialogatore
+          vive sul campo.
+        </p>
+        <ul>
+          <li>Dialoghi sempre diversi, realistici e imprevedibili</li>
+          <li>Obiezioni, escalation emotive e cambi di ritmo simulati</li>
+          <li>Valutazione di tecnica, empatia e gestione del no</li>
+          <li>Report di performance per coaching mirato</li>
+        </ul>
+        <a href="#ur-realtalk" class="product-link">Scopri UR-RealTalk™ nel dettaglio →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODO -->
+  <section id="metodo" class="fade-in">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      Metodo URP – Unlock. Refine. Perform.
+    </h2>
+    <p>
+      Il Metodo URP nasce sul campo, nei giorni buoni e soprattutto in quelli difficili.
+      L’obiettivo è uno: trasformare un team “che ci prova” in un team che porta risultati stabili e misurabili.
+    </p>
+    <ul style="list-style: none; padding: 0;">
+      <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;">
+        <strong><span style="color: #0066ff;">✔</span> Unlock (Analisi & diagnosi):</strong>
+        entro nei numeri, nelle giornate tipo e nelle dinamiche interne. Individuo colli di bottiglia su recruiting,
+        formazione, leadership e processo di chiusura. Qui capiamo perché il team non sta performando come dovrebbe.
+      </li>
+      <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;">
+        <strong><span style="color: #0066ff;">✔</span> Refine (Formazione & sistema):</strong>
+        lavoro su script, gestione obiezioni, ruolo dei TL, routine giornaliere e utilizzo di strumenti digitali come RAAS™ e UR-RealTalk™.
+        Ogni persona sa cosa deve fare, come farlo e con quali standard.
+      </li>
+      <li style="margin-bottom: 20px; padding: 16px; background-color: #f9f9f9; border-radius: 8px;">
+        <strong><span style="color: #0066ff;">✔</span> Perform (Consolidamento & scalabilità):</strong>
+        trasformiamo i risultati iniziali in nuovo standard. I TL allenano i nuovi, i dati guidano le decisioni e il team diventa
+        una struttura interna che regge nel tempo, senza dipendere da me o da un singolo “campione”.
+      </li>
+    </ul>
+    <p style="text-align: center; max-width: 750px; margin: 30px auto 0;">
+      URP non è teoria: è un sistema per far sì che il canale F2F interno smetta di essere un esperimento
+      e diventi una leva strategica stabile per la tua ONG.
+    </p>
+  </section>
+
+  <!-- RAAS -->
+  <section id="raas" class="fade-in">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      RAAS™ – Recruiting-as-a-Service per il F2F
+    </h2>
+    <p>
+      RAAS™ è il sistema con cui trasformo il recruiting da “speriamo che arrivino candidati” a un processo strutturato,
+      tracciabile e scalabile. Non è un’agenzia interinale, non è solo pubblicare annunci: è un motore continuo che alimenta
+      il tuo team F2F interno con persone in linea con il lavoro.
+    </p>
+    <ul>
+      <li><strong>Strategia annunci:</strong> titoli, descrizioni e canali studiati per attirare chi può reggere il F2F, non chi cerca un lavoretto di passaggio.</li>
+      <li><strong>Funnel digitale:</strong> form di candidatura, filtri, domande chiave e automazioni che scremano subito i profili fuori target.</li>
+      <li><strong>Pre-onboarding:</strong> video, materiali e comunicazioni che preparano il candidato a quello che troverà davvero sul campo.</li>
+      <li><strong>Monitoraggio continuo:</strong> lettura dei dati (CV, show-up, conversione in inserimenti, retention) e ottimizzazione costante.</li>
+    </ul>
+    <p>
+      Risultato: meno tempo perso in colloqui inutili, più persone giuste in formazione, meno turnover nei primi 30 giorni.
+      RAAS™ è pensato per chi vuole un flusso costante di candidati sostenibile nel tempo, non un picco di due settimane.
+    </p>
+  </section>
+
+  <!-- UR-REALTALK -->
+  <section id="ur-realtalk" class="fade-in">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      UR-RealTalk™ – Simulatore cognitivo per dialogatori F2F
+    </h2>
+    <p>
+      UR-RealTalk™ è un simulatore cognitivo avanzato che replica in tempo reale le dinamiche, le obiezioni e gli stati emotivi
+      che un dialogatore vive sul campo. Non è un semplice “bot di chat”: è un ambiente di allenamento progettato sulla realtà
+      delle giornate F2F.
+    </p>
+    <ul>
+      <li><strong>Simulazioni vive:</strong> ogni sessione è diversa, con passanti che reagiscono, esitano, cambiano idea, si irrigidiscono o si aprono.</li>
+      <li><strong>Obiezioni e contesti variabili:</strong> gestione di no secchi, finti sì, partner scettici, fretta, distrazioni, condizioni meteo, orari “morti”.</li>
+      <li><strong>Lettura cognitiva:</strong> UR-RealTalk™ valuta come il dialogatore ascolta, risponde, gestisce il ritmo e porta l’ask finale.</li>
+      <li><strong>Report strutturati:</strong> punti di forza, errori ricorrenti, momenti critici della conversazione su cui lavorare in coaching.</li>
+    </ul>
+    <p><strong>Modalità di utilizzo:</strong></p>
+    <ul>
+      <li><strong>Formazione:</strong> per allenare nuovi ingressi prima che vadano sul campo.</li>
+      <li><strong>Esame:</strong> per capire se un dialogatore è pronto per il ruolo o per il passaggio a team leader.</li>
+      <li><strong>Campo simulato:</strong> per riprodurre giornate complesse, con più no consecutivi e obiezioni pesanti.</li>
+      <li><strong>Crisis simulation:</strong> per allenare la tenuta mentale dopo una serie di “giornate nere”.</li>
+    </ul>
+    <p>
+      UR-RealTalk™ non sostituisce il campo, ma riduce drasticamente il tempo tra “ho fatto formazione” e “porto a casa adesioni”.
+      È pensato per ONG e provider che vogliono alzare lo standard medio del team, non puntare solo su pochi campioni.
+    </p>
+  </section>
+
+  <!-- ESPERIENZA -->
+  <section id="esperienza" class="fade-in">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">Esperienza sul campo.</h2>
+    <p>
+      Ogni organizzazione ha la sua storia, ma tutte hanno un punto in comune: i risultati dipendono dalla qualità delle persone,
+      dai processi e dalla capacità di leggere i numeri senza raccontarsela.
+    </p>
+    <p>
+      Negli anni ho:
+    </p>
+    <ul>
+      <li>guidato uffici F2F con oltre 2.000 adesioni annue e più di 300.000€ di valore donazioni generato in un solo anno;</li>
+      <li>rilanciato una filiale in calo con un aumento di oltre il 40% delle adesioni in pochi mesi;</li>
+      <li>aperto e avviato nuove città con team interni, lavorando su recruiting, formazione e leadership;</li>
+      <li>sviluppato sistemi HR, RAAS™ e UR-RealTalk™ che oggi uso con le ONG con cui collaboro.</li>
+    </ul>
+    <p>
+      Integro l’esperienza sul campo con un approccio imprenditoriale: dati, struttura e processi chiari per far crescere davvero un team F2F.
+    </p>
+    <p>
+      Oggi lavoro principalmente con ONG e realtà non profit che vogliono avere il controllo del canale F2F,
+      riducendo la dipendenza da provider esterni e riportando competenza all’interno.
+    </p>
+  </section>
+
+  <!-- SPEAKER & PERFORMANCE ADVISOR -->
+  <section id="speaker" class="fade-in">
+    <h2 style="border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; display: inline-block;">
+      Speaker & Performance Advisor per ONG e Provider F2F
+    </h2>
+
+    <p>
+      Affianco ONG e provider come Performance Advisor, unendo esperienza sul campo e visione strategica.
+      Lavoro con board, management e responsabili operativi per migliorare prestazioni, processi e qualità dei team F2F.
+    </p>
+
+    <p>
+      Il mio contributo parte dalla lettura dei dati e arriva fino alla struttura delle giornate tipo, al ruolo dei team leader,
+      alla qualità della formazione e alla relazione tecnica tra ONG e provider. L’obiettivo è uno: costruire team che performano,
+      reggono e crescono nel tempo.
+    </p>
+
+    <img src="data:image/jpeg;base64,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
